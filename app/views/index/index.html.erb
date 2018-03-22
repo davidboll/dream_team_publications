@@ -1,8 +1,32 @@
-<h1>Dream Team Publications</h1>
+<div id="sidebar">
+  <div class="mui--text-light mui--text-display1 mui--align-vertical">
+    <h1>Dream Team Publications</h1>
+  </div>
+</div>
 
-<% @api_news_feed.each do |article|%>
-  <article id="news">
-    <h1><%=article.title %></h1>
-    <p><%=article.description %></p>
-  </article>
-<% end %>
+<div id="content" class="mui-container-fluid">
+
+  <div class="mui-row">
+  <div class="mui-col-sm-10 mui-col-sm-offset-1">
+    <br>
+    <br>
+    <div class="mui--text-dark-secondary mui--text-body2">POST CREATED BY US</div>
+    <div class="mui-divider"></div>
+    <br>
+  
+
+    <br>
+    <br>
+
+    <div class="mui--text-dark-secondary mui--text-body2">POSTS FROM NEWS-API</div>
+    <div class="mui-divider"></div>
+      <% @api_news_feed.each do |article|%>
+        <article id="news">
+          <h4><%=article.title %></h4>
+          <p><i><%=article.description %></i></p>
+        </article>
+      <% end %>
+    </div>
+    </div>
+
+</div>
