@@ -45,6 +45,8 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
+    autoprefixer-rails (8.2.0)
+      execjs
     backports (3.11.1)
     bcrypt (3.1.11)
     bindex (0.5.0)
@@ -135,6 +137,9 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     msgpack (1.2.4)
+    mui-sass (0.9.35)
+      autoprefixer-rails (>= 6.5)
+      sass (>= 3.3)
     multi_json (1.13.1)
     multi_test (0.1.2)
     news-api (0.0.0)
@@ -273,6 +278,7 @@ DEPENDENCIES
   factory_bot_rails
   launchy
   listen (>= 3.0.5, < 3.2)
+  mui-sass
   news-api
   pg (>= 0.18, < 2.0)
   pry-byebug
